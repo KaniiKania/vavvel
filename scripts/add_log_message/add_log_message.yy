@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"add_log_message",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"add_log_message",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
