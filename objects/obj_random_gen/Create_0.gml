@@ -1,4 +1,4 @@
-
+room_speed=99999999
 var wdt = room_width / 12;
 var hgt = room_height / 12;
 
@@ -25,8 +25,8 @@ var hgt = room_height / 12;
 	 }
 	}
 	
-	image_xscale = 1.5
-	image_yscale = 1.5
+	image_xscale = 1
+	image_yscale = 1
 
 
 

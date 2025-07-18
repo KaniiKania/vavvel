@@ -19,4 +19,5 @@ function get_armor(){
 			av = 0
 			break;		
 	}
+	
 }

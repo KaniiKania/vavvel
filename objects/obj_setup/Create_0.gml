@@ -2,12 +2,22 @@ randomize()
 var randomHue = irandom_range(0, 255)
 global.col = make_color_hsv(randomHue, 220, 220)
 
-room_speed=99999999
-global.maxhp = irandom_range(12,16)
+
+/// V.A.V.E.L
+global.virtue = irandom_range(1,3)
+global.agility = irandom_range(1,3)
+global.vitality = irandom_range(1,3)
+global.ether = irandom_range(1,3)
+global.legacy = irandom_range(1,3)
+
+global.maxhp = irandom_range(12,16) + global.vitality
 global.hp=global.maxhp
 global.level = 1
 global.damage_dice = 6
 global.gold = irandom_range(4,16)
+
+
+
 
 
 init_item_var()
