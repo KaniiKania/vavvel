@@ -5,7 +5,7 @@ if (gen <= 400) {
 	if (timer %15 == 0) {
 		instance_deactivate_object(obj_wall)
 		instance_deactivate_object(obj_floor)
-		instance_activate_region(x-160, y-160, x+160, y+160, true)
+		instance_activate_region(x-320, y-320, x+320, y+320, true)
 	}
 	
 room_speed = 999999

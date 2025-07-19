@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"do_move","order":1,"path":"scripts/do_move/do_move.yy",},
+  ],
 }

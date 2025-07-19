@@ -7,11 +7,27 @@ if (action == ACT.IDLE) {
 	get_armor()
 
 	/// Controls
-	key_up = keyboard_check_pressed(vk_up)
-	key_down = keyboard_check_pressed(vk_down)
-	key_left = keyboard_check_pressed(vk_left)
-	key_right = keyboard_check_pressed(vk_right)
+	key_up =  keyboard_check_pressed(vk_up) || sim_up
+	key_down = keyboard_check_pressed(vk_down) || sim_down
+	key_left = keyboard_check_pressed(vk_left) || sim_left
+	key_right =  keyboard_check_pressed(vk_right) || sim_right
 
+	
+	if (keyboard_check(vk_up) 
+	or keyboard_check(vk_down) 
+	or keyboard_check(vk_left) 
+	or keyboard_check(vk_right))  fast_move += 1
+	
+	if (keyboard_check(vk_up and fast_move >= 90))  fast_move = 80 sim_up = true
+	if (keyboard_check(vk_down and fast_move >= 90))  fast_move = 80  sim_down = true
+	if (keyboard_check(vk_left and fast_move >= 90))  fast_move = 80  sim_left = true
+	if (keyboard_check(vk_right and fast_move >= 90))  fast_move = 80 sim_right = true
+	
+	if (keyboard_key_release(vk_up) 
+	or keyboard_key_release(vk_down) 
+	or keyboard_key_release(vk_left) 
+	or keyboard_key_release(vk_right))  fast_move = 0
+	
 	/// Attacking
 	if ( key_up and instance_position(x,y-12, obj_enemy_parent)) {
 		clear_log()
@@ -43,6 +59,7 @@ if (action == ACT.IDLE) {
 		regen+=1
 		clear_log()
 		display_inventory = false	
+
 	}
 
 	if ( key_down and can_walk(x,y+12)) { 
@@ -151,7 +168,10 @@ if (action == ACT.DROP) {
 	
 }
 
-
+sim_up = false
+sim_down = false
+sim_left = false
+sim_right = false
 
 
 

@@ -62,6 +62,7 @@
     {"id":{"name":"clear_log","path":"scripts/clear_log/clear_log.yy",},},
     {"id":{"name":"display_inv","path":"scripts/display_inv/display_inv.yy",},},
     {"id":{"name":"display_log","path":"scripts/display_log/display_log.yy",},},
+    {"id":{"name":"do_move","path":"scripts/do_move/do_move.yy",},},
     {"id":{"name":"drop_item","path":"scripts/drop_item/drop_item.yy",},},
     {"id":{"name":"enemy_move","path":"scripts/enemy_move/enemy_move.yy",},},
     {"id":{"name":"get_armor","path":"scripts/get_armor/get_armor.yy",},},
