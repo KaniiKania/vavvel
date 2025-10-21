@@ -41,12 +41,12 @@ function init_items(){
 	{
 		type		=	_type
 		name		=	_name 
-		mindmg		= _mindmg
-		maxdmg		= _maxdmg
+		mindmg		= 	_mindmg
+		maxdmg		= 	_maxdmg
 		charges		=	_charges
 		mod1		=	_mod1
 		mod2		=	_mod2
-		cat			=  _cat
+		cat			=  	_cat
 	}
 	
 
