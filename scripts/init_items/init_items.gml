@@ -39,14 +39,14 @@ function init_items(){
 	
 	function item(_type, _name, _mindmg, _maxdmg, _charges ,_mod1 ,_mod2, _cat) constructor 
 	{
-		type				=	_type
-		name			=	_name 
+		type		=	_type
+		name		=	_name 
 		mindmg		= _mindmg
 		maxdmg		= _maxdmg
 		charges		=	_charges
-		mod1			=	_mod1
-		mod2			=	_mod2
-		cat					=  _cat
+		mod1		=	_mod1
+		mod2		=	_mod2
+		cat			=  _cat
 	}
 	
 
