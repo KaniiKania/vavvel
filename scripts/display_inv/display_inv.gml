@@ -1,6 +1,7 @@
 
 function display_inv(){
-	
+
+/// TODO: change this monstrosity to something more readable 
 	if (display_inventory == true) {
 	
 		var _hh1 = string_height(global.inv[0].name)
